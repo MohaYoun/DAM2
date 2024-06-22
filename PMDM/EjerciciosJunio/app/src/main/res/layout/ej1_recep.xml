@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejerciciosPractJunio.ej1.ej1Recep">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ej1rvLista"
+        android:layout_width="324dp"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ej1tvPruba"
+        android:layout_width="258dp"
+        android:layout_height="81dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej1rvLista"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <TextView
+        android:id="@+id/ej1tvMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej1tvPruba"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/ej1tvMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/ej1tvMax"
+        app:layout_constraintStart_toEndOf="@+id/ej1tvMax"
+        app:layout_constraintTop_toTopOf="@+id/ej1tvMax"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ej1tvMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/ej1tvMedia"
+        app:layout_constraintStart_toEndOf="@+id/ej1tvMedia"
+        app:layout_constraintTop_toTopOf="@+id/ej1tvMedia"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

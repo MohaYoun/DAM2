@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejerciciosPractJunio.ejZooJorge.mainZoo">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ut06_recycler_zoo"
+        android:layout_width="349dp"
+        android:layout_height="417dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ut06_btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ut06_recycler_zoo" />
+
+    <Button
+        android:id="@+id/ut06_btDesordenar"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:text="DESORDENAR"
+        app:layout_constraintBottom_toBottomOf="@+id/ut06_btAdd"
+        app:layout_constraintEnd_toStartOf="@+id/ut06_btAdd"
+        app:layout_constraintTop_toBottomOf="@+id/ut06_recycler_zoo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ut06_btOrdAlf"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="4dp"
+        android:text="ORDENAR ALFABETICO"
+        app:layout_constraintBottom_toBottomOf="@+id/ut06_btAdd"
+        app:layout_constraintStart_toEndOf="@+id/ut06_btAdd"
+        app:layout_constraintTop_toBottomOf="@+id/ut06_recycler_zoo"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

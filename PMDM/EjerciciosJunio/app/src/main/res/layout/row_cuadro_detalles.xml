@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ORDtvUrl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ORDtvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/ORDtvPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/ORDtvFecha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/ORDtvTecnica"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/ORDtvColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView" />
+
+</LinearLayout>
