@@ -1,0 +1,46 @@
+ServerSocket server = new ServerSocket(DEFAULT_PORT);
+
+        while (true) {
+            // Se acepta la conexion del cliente
+            Socket connCliente = server.accept();
+            BufferedReader br = new BufferedReader(new InputStreamReader(connCliente.getInputStream()));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(connCliente.getOutputStream()));
+
+            // Se le la peticion del cliente que lo escribe en la cabecera del navegador
+            String cabecera = br.readLine();
+            System.out.println(cabecera);
+
+            String info, html;
+            try {
+                // Se extrae la informacionde la cabecera
+                info = extraeInformacion(cabecera);
+                html = generaPagina(info);
+            } catch (Exception e) {
+                // TODO: handle exception
+                continue;
+            }
+            
+            // Escribir cabecera 
+            bw.write("HTTP/1.1 200 OK\n");
+            // Para especificar que el contenido sera de tipo json
+            bw.write("Content-Type: application/json; charset=utf-8\n");
+            bw.write("\n");
+            bw.write(html);
+            bw.flush();
+
+            br.close();
+            bw.close();
+            connCliente.close();
+        }
+    }
+
+    private static String generaPagina(String info) {
+        
+        return ;
+        
+    }
+
+    private static String extraeInformacion(String header) {
+        return header.split(" ")[RESOURCE_POSITION];
+    }
+}
