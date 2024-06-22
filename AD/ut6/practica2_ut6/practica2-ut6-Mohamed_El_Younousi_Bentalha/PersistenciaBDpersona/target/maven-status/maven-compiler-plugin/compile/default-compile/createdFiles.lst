@@ -1,0 +1,7 @@
+com\mycompany\persistenciabdpersona\Personas.class
+com\mycompany\persistenciabdpersona\exceptions\NonexistentEntityException.class
+com\mycompany\persistenciabdpersona\Personas_.class
+com\mycompany\persistenciabdpersona\PersistenciaBDpersona.class
+com\mycompany\persistenciabdpersona\PersonasJpaController.class
+com\mycompany\persistenciabdpersona\exceptions\PreexistingEntityException.class
+com\mycompany\persistenciabdpersona\exceptions\IllegalOrphanException.class

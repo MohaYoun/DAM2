@@ -1,0 +1,10 @@
+com\mycompany\persistenciabdemp\exceptions\PreexistingEntityException.class
+com\mycompany\persistenciabdemp\Dept.class
+com\mycompany\persistenciabdemp\exceptions\NonexistentEntityException.class
+com\mycompany\persistenciabdemp\DeptJpaController.class
+com\mycompany\persistenciabdemp\Emp.class
+com\mycompany\persistenciabdemp\Emp_.class
+com\mycompany\persistenciabdemp\Dept_.class
+com\mycompany\persistenciabdemp\EmpJpaController.class
+com\mycompany\persistenciabdemp\exceptions\IllegalOrphanException.class
+com\mycompany\persistenciabdemp\PersistenciaBDemp.class
